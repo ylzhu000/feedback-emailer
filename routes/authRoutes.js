@@ -9,12 +9,19 @@ app.get(
   })
 );
 
-// Get user info
-  app.get('/auth/google/callback', passport.authenticate('google'));
+  // Direct user to the google login page
+  app.get(
+    '/auth/google/callback',
+    passport.authenticate('google'),
+    (req, res) => {
+      res.redirect('/surveys');
+    }
+  );
 
   app.get('/api/logout', (req, res) =>{
     req.logout();
-    res.send(req.user);
+    // res.send(req.user);
+    res.redirect('/');
   });
 
   app.get('/api/current_user', (req, res) => {
