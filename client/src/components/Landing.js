@@ -6,7 +6,7 @@ class Landing extends Component {
      return (
        <div style={{ textAlign: 'center' }}>
          <h1>
-           Emaily!
+           Welcome to Emailer!
          </h1>
          Start collecting feedbacks from your users TODAY !
        </div>
