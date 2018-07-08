@@ -25,7 +25,7 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 
-if (process.env.PORT === 'production') {
+if (process.env.NODE_ENV === 'production') {
   // Redirect to cilent/build when server request static files(js,css...)
   app.use(express.static('client/build'));
 
