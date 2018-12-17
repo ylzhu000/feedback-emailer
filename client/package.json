@@ -2,16 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": {
-    "/auth/google": {
-      "target": "htt://localhost:5000"
-    },
-    "/api/*": {
-      "target": "http://localhost:5000"
-    }
-  },
   "dependencies": {
     "axios": "^0.18.0",
+    "http-proxy-middleware": "^0.19.1",
     "materialize-css": "^1.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -20,6 +13,7 @@
     "react-scripts": "^2.0.3",
     "react-stripe-checkout": "^2.6.3",
     "redux": "^4.0.1",
+    "redux-form": "^8.0.4",
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
