@@ -24,7 +24,7 @@ module.exports = app => {
        _.chain(req.body)
 		.map((event) => {
 			const pathname = new URL(event.url).pathname;
-			const p = new Path('/api/surveys/:surveyId/:choice');
+			const p = new Path('api/surveys/:surveyId/:choice');
 			const match = p.test(pathname);
 
 			if (match) {
