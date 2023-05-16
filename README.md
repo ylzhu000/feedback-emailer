@@ -1,10 +1,15 @@
-# Online Node.JS Full Stack Course
-  In this course, we will build a feedback email app that profiles the advanced features of React, Redux, Express, and Mongo.  
+# Feedback Emailer
+  This app allows companies to send out surveys to customer for feedbacks.
+ 
+# Start backend
+```
+npm install
+npm start
+```
 
-# Heroku Live Site
-  https://mighty-garden-11586.herokuapp.com/
-
-# Start Sever
-  1. npm install
-  2. npm start
-  3. npm run dev (dev env)
+# Start client
+```
+cd client
+npm install
+npm start
+```
